@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card-sec {
+  background-color: rgba(137, 43, 226, 0.411);
+}
+
+.subbutton {
+  background-color: blueviolet;
+  color: white;
+  transition: all 0.4s;
+}
+.subbutton:hover {
+  background-color: rgb(89, 0, 253);
+}
+
+.delbtn {
+  background-color: crimson;
+  color: white;
+}

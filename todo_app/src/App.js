@@ -29,8 +29,17 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Todo todos={this.state.todos} deleteTodo={this.deleteTodo} />
-        <AddTodo addTodo={this.addTodo} />
+        <div className='row justify-content-center mt-4'>
+          <div className='col-md-6 col-xs-12'>
+            <div className='card card-sec'>
+              <div className='card-body'>
+                <h5 className='card-title text-center'>ToDo List</h5>
+                <AddTodo addTodo={this.addTodo} />
+                <Todo todos={this.state.todos} deleteTodo={this.deleteTodo} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

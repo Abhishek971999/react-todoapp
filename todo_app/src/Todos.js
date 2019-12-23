@@ -5,18 +5,22 @@ const Todo = ({ todos, deleteTodo }) => {
     todos.map(todo => {
       return (
         <div key={todo.id}>
-          <h3
-            onClick={() => {
-              deleteTodo(todo.id);
-            }}
-          >
-            {todo.content}
-          </h3>
+          <div>
+            <button
+              className='btn delbtn mb-1 mr-3'
+              onClick={() => {
+                deleteTodo(todo.id);
+              }}
+            >
+              X
+            </button>
+            <span>{todo.content}</span>
+          </div>
         </div>
       );
     })
   ) : (
-    <p>no toodos</p>
+    <h3>No todos to complete</h3>
   );
 
   return <div>{todoList}</div>;

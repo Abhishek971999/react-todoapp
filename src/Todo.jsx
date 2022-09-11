@@ -44,7 +44,7 @@ const Todo = () => {
                     onChange={(e) => setTodoVal(e.target.value)}
                   />
                 </form>
-                {todos && todos.length == 0 && (
+                {todos && todos.length === 0 && (
                   <p className="text-primary my-3">NO TASKS TO COMPLETE</p>
                 )}
                 <div className="todo-list">
